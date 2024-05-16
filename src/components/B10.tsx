@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function B10() {
     const [checkboxValues, setCheckboxValues] = useState<string[]>([]);
 
-    const handleChange = (e) => {
+    const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value;
         const checked = e.target.checked;
 
